@@ -27,6 +27,7 @@ jobs:
         context: .
         push: true
         tags: semereth/devops-static-website:latest
+        runs-on: self-hosted
     
     - name: Run Trivy vulnerability scanner
       uses: aquasecurity/trivy-action@0.20.0
