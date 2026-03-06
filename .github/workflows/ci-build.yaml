@@ -33,7 +33,7 @@ jobs:
       with:
         image-ref: semereth/devops-static-website:v1
         format: table
-        severity: CRITICAL,HIGH
+        severity: CRITICAL,HIGH,MEDIUM
         exit-code: 1
         vuln-type: os,library
         ignore-unfixed: true
