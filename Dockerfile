@@ -1,3 +1,10 @@
-FROM	nginx:alpine
-COPY	.	/usr/share/nginx/html
-EXPOSE	80
+FROM nginx:alpine
+
+
+COPY index.html /usr/share/nginx/html/
+
+COPY LICENSE.txt /usr/share/nginx/html/
+
+COPY assets/ /usr/share/nginx/html/assets/
+
+EXPOSE 80
